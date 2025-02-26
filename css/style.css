@@ -1,0 +1,115 @@
+html{ 
+    font-size: 16px;
+ } 
+body{
+    margin:0;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{ 
+     font-size: 3rem; 
+ } 
+h2{ 
+     font-size: 2rem; 
+ } 
+h3{ 
+     font-size: 1.8rem; 
+ } 
+h4{ 
+    font-size: 1.3rem;
+    }
+h5{ 
+     font-size: 1rem; 
+    } 
+p{
+    font-size: 1rem;
+    }
+.colum3{
+    width: 33.33%;
+    float: left;
+    padding: 10px;
+}
+img{ 
+    width:100%;
+}
+
+header{
+    height: 100vh;
+    background-image: url(../img/Portada.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color:white;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Titulos{
+    text-align: center;
+}
+ article{ 
+     background-color: grey; 
+ } 
+p>a{ 
+     text-decoration: none; 
+     color: red; 
+    } 
+
+/* Estilos para el carrusel personalizado */
+.carousel-container {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    width: 100%;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+@media only screen and (max-width:700px) {
+    .colum3, .Colum4 {
+        width: 100%;
+        float: none;
+    }
+    
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .colum3:first-child {
+        order: -1;
+    }
+}
